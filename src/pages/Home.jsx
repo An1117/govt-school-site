@@ -1,9 +1,14 @@
 // src/pages/Homepage.jsx
-import React from "react";
+import React, { useEffect } from "react";
 import { Box, Typography, Button, Grid, Card, CardContent, Container } from "@mui/material";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Homepage() {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
   <Box sx={{ backgroundColor: '#EAE4D5', minHeight: '100vh', color: '#000' }}>
       {/* Hero Section */}
@@ -25,10 +30,11 @@ export default function Homepage() {
           variant="contained"
           sx={{
             mt: 4,
-            backgroundColor: "#B6B09F",
-            color: '#000',
-            fontWeight: 'bold',
-            '&:hover': { backgroundColor: '#F2F2F2', color: '#000' },
+            backgroundColor: "#e53935",
+            color: "#fff",
+            fontWeight: "bold",
+            '&:hover': { backgroundColor: "#b71c1c", color: "#fff" },
+            transition: "background 0.3s, color 0.3s"
           }}
         >
           Learn More
@@ -46,8 +52,35 @@ export default function Homepage() {
             { title: "1000+ Students", desc: "A thriving learning community" },
             { title: "10+ Clubs", desc: "Extracurricular opportunities for all" },
           ].map((item, index) => (
-            <Grid item xs={12} sm={8} md={4} key={index} display="flex" justifyContent="center">
-              <Card sx={{ width: '100%', maxWidth: 350, mx: 'auto', minHeight: 140, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', backgroundColor: '#F2F2F2', color: '#000', boxShadow: 3 }}>
+            <Grid
+              item
+              xs={12}
+              sm={8}
+              md={4}
+              key={index}
+              display="flex"
+              justifyContent="center"
+              data-aos="zoom-in-up"
+              data-aos-delay={index * 100}
+            >
+              <Card sx={{
+                width: '100%',
+                maxWidth: 350,
+                mx: 'auto',
+                minHeight: 140,
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                backgroundColor: '#F2F2F2',
+                color: '#000',
+                boxShadow: 3,
+                transition: "transform 0.4s cubic-bezier(.4,2,.6,1), box-shadow 0.4s",
+                '&:hover': {
+                  transform: "scale(1.05) translateY(-8px)",
+                  boxShadow: 6,
+                }
+              }}>
                 <CardContent>
                   <Typography variant="h6" fontWeight="bold" align="center" sx={{ fontSize: '1.25rem' }}>
                     {item.title}
@@ -71,8 +104,35 @@ export default function Homepage() {
             { title: "Science Fair", desc: "Showcasing innovative projects." },
             { title: "Cultural Fest", desc: "An evening of performances and fun." },
           ].map((news, index) => (
-            <Grid item xs={12} sm={8} md={4} key={index} display="flex" justifyContent="center">
-              <Card sx={{ width: '100%', maxWidth: 350, mx: 'auto', minHeight: 140, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', backgroundColor: '#F2F2F2', color: '#000', boxShadow: 3 }}>
+            <Grid
+              item
+              xs={12}
+              sm={8}
+              md={4}
+              key={index}
+              display="flex"
+              justifyContent="center"
+              data-aos="fade-up"
+              data-aos-delay={index * 120}
+            >
+              <Card sx={{
+                width: '100%',
+                maxWidth: 350,
+                mx: 'auto',
+                minHeight: 140,
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                backgroundColor: '#F2F2F2',
+                color: '#000',
+                boxShadow: 3,
+                transition: "transform 0.4s cubic-bezier(.4,2,.6,1), box-shadow 0.4s",
+                '&:hover': {
+                  transform: "scale(1.05) translateY(-8px)",
+                  boxShadow: 6,
+                }
+              }}>
                 <CardContent>
                   <Typography variant="h6" fontWeight="bold" align="center" sx={{ fontSize: '1.25rem' }}>
                     {news.title}

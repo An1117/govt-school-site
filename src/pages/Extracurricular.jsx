@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Typography, Grid, Card, CardMedia, CardContent } from "@mui/material";
 import activitiesData from "../data/activities.json";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Extracurricular() {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
     <Container maxWidth="lg" sx={{ py: 5 }}>
       <Typography variant="h4" fontWeight="bold" gutterBottom align="center" color="primary">
@@ -15,7 +21,18 @@ function Extracurricular() {
 
       <Grid container spacing={4} justifyContent="center" alignItems="stretch" sx={{ mt: 2 }}>
         {activitiesData.map((activity, index) => (
-          <Grid item xs={12} sm={8} md={4} key={index} display="flex" justifyContent="center" alignItems="stretch">
+          <Grid
+            item
+            xs={12}
+            sm={8}
+            md={4}
+            key={index}
+            display="flex"
+            justifyContent="center"
+            alignItems="stretch"
+            data-aos="fade-up"
+            data-aos-delay={index * 120}
+          >
             <Card
               sx={{
                 width: '100%',

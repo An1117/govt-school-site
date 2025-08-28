@@ -37,26 +37,56 @@ function Navbar() {
       {/* Top Navbar */}
       <AppBar position="static" sx={{ backgroundColor: "#B6B09F" }}>
         <Toolbar>
-          <Typography variant="h6" sx={{ flexGrow: 1, color: "#000" }}>
+          <Typography
+            variant="h5"
+            sx={{
+              flexGrow: 1,
+              color: "#000",
+              fontWeight: "bold",
+              fontSize: { xs: "1.5rem", sm: "2rem", md: "2.3rem" },
+              letterSpacing: 1
+            }}
+          >
             Govt. School
           </Typography>
           <Box>
             <Button
-              sx={{ color: "#000", fontWeight: "bold" }}
+              sx={{
+                color: "#000",
+                fontWeight: "bold",
+                backgroundColor: "#F6F1DE",
+                border: "2px solid #fff",
+                mx: 0.5,
+                fontSize: "1rem"
+              }}
               component={Link}
               to="/"
             >
               Home
             </Button>
             <Button
-              sx={{ color: "#000", fontWeight: "bold" }}
+              sx={{
+                color: "#000",
+                fontWeight: "bold",
+                backgroundColor: "#F6F1DE",
+                border: "2px solid #fff",
+                mx: 0.5,
+                fontSize: "1rem"
+              }}
               component={Link}
               to="/about"
             >
               About
             </Button>
             <Button
-              sx={{ color: "#000", fontWeight: "bold" }}
+              sx={{
+                color: "#000",
+                fontWeight: "bold",
+                backgroundColor: "#F6F1DE",
+                border: "2px solid #fff",
+                mx: 0.5,
+                fontSize: "1rem"
+              }}
               component={Link}
               to="/contact"
             >
@@ -66,7 +96,7 @@ function Navbar() {
             {/* Menu Button */}
             <IconButton
               edge="end"
-              sx={{ color: "#000" }}
+              sx={{ color: "#000", ml: 1 }}
               onClick={toggleDrawer(true)}
             >
               <MenuIcon />
