@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Library",
+    "description": "A well-stocked library with books across subjects and reading zones.",
+    "image": "/assets/library.jpg"
+  },
+  {
+    "name": "Computer Lab",
+    "description": "Equipped with modern computers and internet access for students.",
+    "image": "/assets/computer-lab.jpg"
+  },
+  {
+    "name": "Sports Ground",
+    "description": "Open playground for football, cricket, and other outdoor sports.",
+    "image": "/assets/sports-ground.jpg"
+  },
+  {
+    "name": "Science Labs",
+    "description": "Separate labs for Physics, Chemistry, and Biology with modern equipment.",
+    "image": "/assets/science-lab.jpg"
+  }
+]

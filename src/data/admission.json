@@ -1,0 +1,24 @@
+{
+  "importantDates": {
+    "start": "1st April 2025",
+    "end": "30th April 2025",
+    "test": "15th May 2025"
+  },
+  "eligibility": [
+    "Students must meet the age requirements for the respective classes.",
+    "Previous academic performance will be considered for higher classes.",
+    "Must provide proof of residence in the area."
+  ],
+  "documents": [
+    "Birth certificate",
+    "Previous school report card (if applicable)",
+    "Address proof",
+    "Passport size photographs"
+  ],
+  "steps": [
+    "Collect the admission form from the school office or download it online.",
+    "Fill in the form and attach all required documents.",
+    "Submit the form before the deadline.",
+    "Attend the entrance test (if applicable)."
+  ]
+}

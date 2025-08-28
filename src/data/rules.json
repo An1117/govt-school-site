@@ -1,0 +1,19 @@
+{
+  "generalRules": [
+    "School starts at 8:00 AM and ends at 3:00 PM.",
+    "Students must wear the proper school uniform.",
+    "No mobile phones or electronic gadgets during school hours.",
+    "Attendance must be above 75% to appear for exams."
+  ],
+  "classroomRules": [
+    "Raise your hand before speaking.",
+    "Keep your desk and surroundings clean.",
+    "Respect teachers and classmates.",
+    "Complete homework and assignments on time."
+  ],
+  "disciplineRules": [
+    "Bullying or misbehavior will result in strict action.",
+    "Cheating during exams is prohibited and punishable.",
+    "Follow instructions given by staff during assemblies and events."
+  ]
+}

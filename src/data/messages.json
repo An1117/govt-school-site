@@ -1,0 +1,38 @@
+{
+  "principal": [
+    {
+      "name": "Mr. John Doe",
+      "role": "Principal",
+      "image": "/assets/principal.jpg",
+      "message": "Welcome to our school! We strive for excellence in education."
+    }
+  ],
+  "teachers": [
+    {
+      "name": "Ms. Jane Smith",
+      "role": "Math Teacher",
+      "image": "/assets/teacher1.jpg",
+      "message": "Math is fun! Join our classes to explore new horizons."
+    },
+    {
+      "name": "Mr. Robert Brown",
+      "role": "Science Teacher",
+      "image": "/assets/teacher2.jpg",
+      "message": "Science opens doors to innovation and creativity."
+    }
+  ],
+  "students": [
+    {
+      "name": "Alice Johnson",
+      "role": "Class 10",
+      "image": "/assets/student1.jpg",
+      "message": "I love learning here! Teachers are very supportive."
+    },
+    {
+      "name": "Bob Lee",
+      "role": "Class 9",
+      "image": "/assets/student2.jpg",
+      "message": "Participating in clubs and events is amazing!"
+    }
+  ]
+}

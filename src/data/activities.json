@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Music Club",
+    "description": "Learn instruments, singing, and perform at school events.",
+    "image": "/assets/music-club.jpg"
+  },
+  {
+    "name": "Drama Club",
+    "description": "Acting workshops and stage performances for all students.",
+    "image": "/assets/drama-club.jpg"
+  },
+  {
+    "name": "Debate Society",
+    "description": "Enhance public speaking and critical thinking skills.",
+    "image": "/assets/debate-club.jpg"
+  },
+  {
+    "name": "Sports Club",
+    "description": "Football, cricket, badminton, and athletics for students.",
+    "image": "/assets/sports-club.jpg"
+  },
+  {
+    "name": "Art & Craft",
+    "description": "Painting, sketching, and handicrafts to encourage creativity.",
+    "image": "/assets/art-craft.jpg"
+  }
+]
